@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>funga games studio | funga-games.com</title>
+		<meta charset="UTF-8" />
+		<!-- for Google -->
+		<meta name="description" content="funga games studio" />
+		<meta name="keywords" content="funga games studio casual game match three" />
+
+		<meta name="author" content="funga" />
+		<meta name="copyright" content="funga" />
+		<meta name="application-name" content="" />
+
+		<!-- for Facebook -->
+		<meta property="og:title" content="funga games" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="http://funga-games.com/img/logo_large.jpg" />
+		<meta property="og:url" content="http://funga-games.com/" />
+		<meta property="og:description" content="funga games studio" />
+
+		<!-- for Twitter -->
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="funga games studio" />
+		<meta name="twitter:description" content="funga games studio" />
+		<meta name="twitter:image" content="http://funga-games.com/img/logo_large.jpg" />
+
+		<style>
+			html, body {
+				width: 100%;
+				height: 100%;
+				padding: 0;
+				margin: 0;
+			}
+
+			.bg {
+				background: -webkit-radial-gradient(#61006a, #240043); /* Safari 5.1 to 6.0 */
+				background: -o-radial-gradient(#61006a, #240043); /* For Opera 11.6 to 12.0 */
+				background: -moz-radial-gradient(#61006a, #240043); /* For Firefox 3.6 to 15 */
+				background: radial-gradient(#61006a, #240043); /* Standard syntax */
+			}
+
+			#logo {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				-webkit-transform: translate(-50%,-50%);
+				-o-transform: translate(-50%,-50%);
+				-moz-transform: translate(-50%,-50%);
+				max-width: 80%;
+				height: auto;
+			}
+			.fb-like {
+				position: absolute;
+				top: 30px;
+				left: 30px;
+			}
+
+		</style>
+	</head>
+	<body class="bg">
+		<div id="fb-root"></div>
+		<script>
+			window.fbAsyncInit = function() {
+				FB.init({
+					appId : '1624404804512831',
+					xfbml : true,
+					version : 'v2.3'
+				});
+			}; ( function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) {
+						return;
+					}
+					js = d.createElement(s);
+					js.id = id;
+					js.src = "//connect.facebook.net/en_US/sdk.js";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<div class="fb-like" data-href="https://facebook.com/funga.games/" data-layout="standard" data-colorscheme="dark" data-action="like" data-show-faces="false" data-share="true"></div>
+		<img id="logo" src="img/logo_alpha.png" alt="funga"/>
+	</body>
+</html>
